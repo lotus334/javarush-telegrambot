@@ -1,10 +1,15 @@
 # Release Notes
 
-## 0.1.0-SNAPSHOT
 
-*   add stub telegram bot
-*   add SpringBoot skeleton project
+## 0.3.0-SNAPSHOT
+
+*   JRTB-13: add deployment process to the project
 
 ## 0.2.0-SNAPSHOT
 
-* implement Command pattern for handling Telegram Bot commands
+*   JRTB-3: implement Command pattern for handling Telegram Bot commands
+
+## 0.1.0-SNAPSHOT
+
+*   JRTB-2: add stub telegram bot
+*   JRTB-1: add SpringBoot skeleton project
