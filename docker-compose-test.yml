@@ -1,14 +1,14 @@
 version: '3.1'
 
 services:
-  jrtb-db:
+  jrtb-db-dev:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_DATABASE: "dev_jrtb_db"
       # So you don't have to use root, but you can if you like
-      MYSQL_USER: ${BOT_DB_USERNAME}
-      MYSQL_PASSWORD: ${BOT_DB_PASSWORD}
+      MYSQL_USER: 'dev_jrtb_db_user'
+      MYSQL_PASSWORD: 'dev_jrtb_db_password'
       MYSQL_ROOT_PASSWORD: 'root'
     ports:
       # <Port exposed (instead of localhost uses 0.0.0.0)> : < MySQL Port running inside container>

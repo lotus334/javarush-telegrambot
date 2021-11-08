@@ -24,5 +24,5 @@ services:
       - '4306:3306'
     expose:
       - '3306'
-      - cap_add:
-          - SYS_NICE  # CAP_SYS_NICE
+    cap_add:
+      - SYS_NICE  # CAP_SYS_NICE
