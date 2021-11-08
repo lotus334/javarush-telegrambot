@@ -21,7 +21,14 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
+    - name: Set up MySQL
+      uses: mirromutth/mysql-action@v1.1
+      with:
+        mysql version: '8.0'
+        mysql database: 'dev_jrtb_db'
+        mysql root password: 'root'
+        mysql user: 'dev_jrtb_db_user'
+        mysql password: 'dev_jrtb_db_password'
     # Runs a single command using the runners shell
     - name: Set up JDK 1.11
     
